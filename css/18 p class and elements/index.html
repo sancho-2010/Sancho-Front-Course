@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Class P Elements</title>
+</head>
+
+<body>
+
+
+    <a href="https://www.facebook.com">facebook</a>
+    <br>
+    <a href="#target1">Link 1</a>
+    <br>
+    <a href="#target2">Link 2</a>
+    <br>
+    <br>
+   
+    <input class="check" type="checkbox">
+    <input class="check" type="radio" name="r1">
+    <input class="check" type="radio" name="r1">
+    <br>
+    <br>
+    <input type="text" placeholder="some text">
+    <br>
+    <br>
+    <br>
+
+    <p id="target1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad officiis illo ipsa, hic eveniet eligendi odit
+        quibusdam, ipsum aliquam sunt, magnam nisi adipisci et perspiciatis animi impedit. Consequatur, vel incidunt.
+    </p>
+    <p id="target2">target 2</p>
+
+    <ul>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <ol>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ol>
+</body>
+
+<style>
+    * {
+        /* transition: 1s; */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :link{
+        color: blue;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    a:active {
+        color: greenyellow;
+    }
+
+    input:checked {
+        width: 35px;
+        height: 35px;
+        box-shadow: 0 0 5px 5px black;
+    }
+
+    input:focus {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.413);
+    }
+
+    /* input:not(.check){
+        box-shadow:  0 0 10px 10px #333;
+        border-radius: 20px;
+    } */
+
+    :target {
+        background-color: indigo;
+        color: snow;
+    }
+
+
+
+    ::marker {
+        color: red;
+        font-size: 20px;
+        /* text-shadow: 1px 1px 3px blue; */
+    }
+
+    ::placeholder {
+        color: rgba(255, 0, 0, 0.493);
+        text-align: center;
+    }
+
+    ::selection {
+        background-color: black;
+        color: red;
+    }
+
+    li {
+        position: relative;
+        /* line-height: 30px; */
+        /* list-style-type: armenian; */
+        list-style-type: none; 
+    }
+
+
+    li::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        /* background: url(/img/2.jpg) center / cover no-repeat; */
+        border-radius: 50%;
+        /* background-color: red; */
+        box-shadow: 0 0 2px 2px inset red;
+        /* top: -5px; */
+        left: -30px;
+    }
+
+    li::after {
+        /* content: ''; */
+        /* display: block; */
+        /* position: absolute; */
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background-color: red; */
+        /* box-shadow: 0 0 2px 2px inset black; */
+        /* border-radius: 50%; */
+        /* top: 5px; */
+        /* right: 75%; */
+        /* background: url(/img/2.jpg) center / cover no-repeat; */
+    }
+</style>
+
+</html>
